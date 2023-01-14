@@ -1,0 +1,263 @@
+Feature,Description
+SK_ID_CURR,ID of loan in our sample
+TARGET,"Target variable (1 - client with payment difficulties: he/she had late payment more than X days on at least one of the first Y installments of the loan in our sample, 0 - all other cases)"
+CNT_CHILDREN,Number of children the client has
+AMT_INCOME_TOTAL,Income of the client
+AMT_CREDIT,Credit amount of the loan
+AMT_ANNUITY,Loan annuity
+AMT_GOODS_PRICE,For consumer loans it is the price of the goods for which the loan is given
+REGION_POPULATION_RELATIVE,Normalized population of region where client lives (higher number means the client lives in more populated region)
+DAYS_BIRTH,Client's age in days at the time of application
+DAYS_EMPLOYED,How many days before the application the person started current employment
+DAYS_REGISTRATION,How many days before the application did client change his registration
+DAYS_ID_PUBLISH,How many days before the application did client change the identity document with which he applied for the loan
+OWN_CAR_AGE,Age of client's car
+FLAG_MOBIL,"Did client provide mobile phone (1=YES, 0=NO)"
+FLAG_EMP_PHONE,"Did client provide work phone (1=YES, 0=NO)"
+FLAG_WORK_PHONE,"Did client provide home phone (1=YES, 0=NO)"
+FLAG_CONT_MOBILE,"Was mobile phone reachable (1=YES, 0=NO)"
+FLAG_PHONE,"Did client provide home phone (1=YES, 0=NO)"
+FLAG_EMAIL,"Did client provide email (1=YES, 0=NO)"
+CNT_FAM_MEMBERS,How many family members does client have
+REGION_RATING_CLIENT,"Our rating of the region where client lives (1,2,3)"
+REGION_RATING_CLIENT_W_CITY,"Our rating of the region where client lives with taking city into account (1,2,3)"
+HOUR_APPR_PROCESS_START,Approximately at what hour did the client apply for the loan
+REG_REGION_NOT_LIVE_REGION,"Flag if client's permanent address does not match contact address (1=different, 0=same, at region level)"
+REG_REGION_NOT_WORK_REGION,"Flag if client's permanent address does not match work address (1=different, 0=same, at region level)"
+LIVE_REGION_NOT_WORK_REGION,"Flag if client's contact address does not match work address (1=different, 0=same, at region level)"
+REG_CITY_NOT_LIVE_CITY,"Flag if client's permanent address does not match contact address (1=different, 0=same, at city level)"
+REG_CITY_NOT_WORK_CITY,"Flag if client's permanent address does not match work address (1=different, 0=same, at city level)"
+LIVE_CITY_NOT_WORK_CITY,"Flag if client's contact address does not match work address (1=different, 0=same, at city level)"
+EXT_SOURCE_1,Normalized score from external data source
+EXT_SOURCE_2,Normalized score from external data source
+EXT_SOURCE_3,Normalized score from external data source
+APARTMENTS_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+BASEMENTAREA_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+YEARS_BEGINEXPLUATATION_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+YEARS_BUILD_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+COMMONAREA_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+ELEVATORS_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+ENTRANCES_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+FLOORSMAX_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+FLOORSMIN_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+LANDAREA_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+LIVINGAPARTMENTS_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+LIVINGAREA_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NONLIVINGAPARTMENTS_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NONLIVINGAREA_AVG,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+APARTMENTS_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+BASEMENTAREA_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+YEARS_BEGINEXPLUATATION_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+YEARS_BUILD_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+COMMONAREA_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+ELEVATORS_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+ENTRANCES_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+FLOORSMAX_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+FLOORSMIN_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+LANDAREA_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+LIVINGAPARTMENTS_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+LIVINGAREA_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NONLIVINGAPARTMENTS_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NONLIVINGAREA_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+APARTMENTS_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+BASEMENTAREA_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+YEARS_BEGINEXPLUATATION_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+YEARS_BUILD_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+COMMONAREA_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+ELEVATORS_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+ENTRANCES_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+FLOORSMAX_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+FLOORSMIN_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+LANDAREA_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+LIVINGAPARTMENTS_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+LIVINGAREA_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NONLIVINGAPARTMENTS_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NONLIVINGAREA_MEDI,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+TOTALAREA_MODE,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+OBS_30_CNT_SOCIAL_CIRCLE,How many observation of client's social surroundings with observable 30 DPD (days past due) default
+DEF_30_CNT_SOCIAL_CIRCLE,How many observation of client's social surroundings defaulted on 30 DPD (days past due) 
+OBS_60_CNT_SOCIAL_CIRCLE,How many observation of client's social surroundings with observable 60 DPD (days past due) default
+DEF_60_CNT_SOCIAL_CIRCLE,How many observation of client's social surroundings defaulted on 60 (days past due) DPD
+DAYS_LAST_PHONE_CHANGE,How many days before application did client change phone
+FLAG_DOCUMENT_2,Did client provide document 2
+FLAG_DOCUMENT_3,Did client provide document 3
+FLAG_DOCUMENT_4,Did client provide document 4
+FLAG_DOCUMENT_5,Did client provide document 5
+FLAG_DOCUMENT_6,Did client provide document 6
+FLAG_DOCUMENT_7,Did client provide document 7
+FLAG_DOCUMENT_8,Did client provide document 8
+FLAG_DOCUMENT_9,Did client provide document 9
+FLAG_DOCUMENT_10,Did client provide document 10
+FLAG_DOCUMENT_11,Did client provide document 11
+FLAG_DOCUMENT_12,Did client provide document 12
+FLAG_DOCUMENT_13,Did client provide document 13
+FLAG_DOCUMENT_14,Did client provide document 14
+FLAG_DOCUMENT_15,Did client provide document 15
+FLAG_DOCUMENT_16,Did client provide document 16
+FLAG_DOCUMENT_17,Did client provide document 17
+FLAG_DOCUMENT_18,Did client provide document 18
+FLAG_DOCUMENT_19,Did client provide document 19
+FLAG_DOCUMENT_20,Did client provide document 20
+FLAG_DOCUMENT_21,Did client provide document 21
+AMT_REQ_CREDIT_BUREAU_HOUR,Number of enquiries to Credit Bureau about the client one hour before application
+AMT_REQ_CREDIT_BUREAU_DAY,Number of enquiries to Credit Bureau about the client one day before application (excluding one hour before application)
+AMT_REQ_CREDIT_BUREAU_WEEK,Number of enquiries to Credit Bureau about the client one week before application (excluding one day before application)
+AMT_REQ_CREDIT_BUREAU_MON,Number of enquiries to Credit Bureau about the client one month before application (excluding one week before application)
+AMT_REQ_CREDIT_BUREAU_QRT,Number of enquiries to Credit Bureau about the client 3 month before application (excluding one month before application)
+AMT_REQ_CREDIT_BUREAU_YEAR,Number of enquiries to Credit Bureau about the client one day year (excluding last 3 months before application)
+NAME_CONTRACT_TYPE_Cash loans,Identification if loan is cash or revolving
+NAME_CONTRACT_TYPE_Revolving loans,Identification if loan is cash or revolving
+CODE_GENDER_F,Gender of the client
+CODE_GENDER_M,Gender of the client
+CODE_GENDER_XNA,Gender of the client
+FLAG_OWN_CAR_N,Flag if the client owns a car
+FLAG_OWN_CAR_Y,Flag if the client owns a car
+FLAG_OWN_REALTY_N,Flag if client owns a house or flat
+FLAG_OWN_REALTY_Y,Flag if client owns a house or flat
+NAME_TYPE_SUITE_Children,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_TYPE_SUITE_Family,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_TYPE_SUITE_Group of people,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_TYPE_SUITE_Other_A,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_TYPE_SUITE_Other_B,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+"NAME_TYPE_SUITE_Spouse, partner","Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_TYPE_SUITE_Unaccompanied,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_INCOME_TYPE_Businessman,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_INCOME_TYPE_Commercial associate,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_INCOME_TYPE_Maternity leave,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_INCOME_TYPE_Pensioner,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_INCOME_TYPE_State servant,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_INCOME_TYPE_Student,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_INCOME_TYPE_Unemployed,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_INCOME_TYPE_Working,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_EDUCATION_TYPE_Academic degree,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_EDUCATION_TYPE_Higher education,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_EDUCATION_TYPE_Incomplete higher,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_EDUCATION_TYPE_Lower secondary,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_EDUCATION_TYPE_Secondary / secondary special,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_FAMILY_STATUS_Civil marriage,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_FAMILY_STATUS_Married,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_FAMILY_STATUS_Separated,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_FAMILY_STATUS_Single / not married,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_FAMILY_STATUS_Unknown,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_FAMILY_STATUS_Widow,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_HOUSING_TYPE_Co-op apartment,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_HOUSING_TYPE_House / apartment,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_HOUSING_TYPE_Municipal apartment,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_HOUSING_TYPE_Office apartment,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_HOUSING_TYPE_Rented apartment,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+NAME_HOUSING_TYPE_With parents,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+OCCUPATION_TYPE_Accountants,What kind of occupation does the client have
+OCCUPATION_TYPE_Cleaning staff,What kind of occupation does the client have
+OCCUPATION_TYPE_Cooking staff,What kind of occupation does the client have
+OCCUPATION_TYPE_Core staff,What kind of occupation does the client have
+OCCUPATION_TYPE_Drivers,What kind of occupation does the client have
+OCCUPATION_TYPE_HR staff,What kind of occupation does the client have
+OCCUPATION_TYPE_High skill tech staff,What kind of occupation does the client have
+OCCUPATION_TYPE_IT staff,What kind of occupation does the client have
+OCCUPATION_TYPE_Laborers,What kind of occupation does the client have
+OCCUPATION_TYPE_Low-skill Laborers,What kind of occupation does the client have
+OCCUPATION_TYPE_Managers,What kind of occupation does the client have
+OCCUPATION_TYPE_Medicine staff,What kind of occupation does the client have
+OCCUPATION_TYPE_Private service staff,What kind of occupation does the client have
+OCCUPATION_TYPE_Realty agents,What kind of occupation does the client have
+OCCUPATION_TYPE_Sales staff,What kind of occupation does the client have
+OCCUPATION_TYPE_Secretaries,What kind of occupation does the client have
+OCCUPATION_TYPE_Security staff,What kind of occupation does the client have
+OCCUPATION_TYPE_Waiters/barmen staff,What kind of occupation does the client have
+WEEKDAY_APPR_PROCESS_START_FRIDAY,On which day of the week did the client apply for the loan
+WEEKDAY_APPR_PROCESS_START_MONDAY,On which day of the week did the client apply for the loan
+WEEKDAY_APPR_PROCESS_START_SATURDAY,On which day of the week did the client apply for the loan
+WEEKDAY_APPR_PROCESS_START_SUNDAY,On which day of the week did the client apply for the loan
+WEEKDAY_APPR_PROCESS_START_THURSDAY,On which day of the week did the client apply for the loan
+WEEKDAY_APPR_PROCESS_START_TUESDAY,On which day of the week did the client apply for the loan
+WEEKDAY_APPR_PROCESS_START_WEDNESDAY,On which day of the week did the client apply for the loan
+ORGANIZATION_TYPE_Advertising,Type of organization where client works
+ORGANIZATION_TYPE_Agriculture,Type of organization where client works
+ORGANIZATION_TYPE_Bank,Type of organization where client works
+ORGANIZATION_TYPE_Business Entity Type 1,Type of organization where client works
+ORGANIZATION_TYPE_Business Entity Type 2,Type of organization where client works
+ORGANIZATION_TYPE_Business Entity Type 3,Type of organization where client works
+ORGANIZATION_TYPE_Cleaning,Type of organization where client works
+ORGANIZATION_TYPE_Construction,Type of organization where client works
+ORGANIZATION_TYPE_Culture,Type of organization where client works
+ORGANIZATION_TYPE_Electricity,Type of organization where client works
+ORGANIZATION_TYPE_Emergency,Type of organization where client works
+ORGANIZATION_TYPE_Government,Type of organization where client works
+ORGANIZATION_TYPE_Hotel,Type of organization where client works
+ORGANIZATION_TYPE_Housing,Type of organization where client works
+ORGANIZATION_TYPE_Industry: type 1,Type of organization where client works
+ORGANIZATION_TYPE_Industry: type 10,Type of organization where client works
+ORGANIZATION_TYPE_Industry: type 11,Type of organization where client works
+ORGANIZATION_TYPE_Industry: type 12,Type of organization where client works
+ORGANIZATION_TYPE_Industry: type 13,Type of organization where client works
+ORGANIZATION_TYPE_Industry: type 2,Type of organization where client works
+ORGANIZATION_TYPE_Industry: type 3,Type of organization where client works
+ORGANIZATION_TYPE_Industry: type 4,Type of organization where client works
+ORGANIZATION_TYPE_Industry: type 5,Type of organization where client works
+ORGANIZATION_TYPE_Industry: type 6,Type of organization where client works
+ORGANIZATION_TYPE_Industry: type 7,Type of organization where client works
+ORGANIZATION_TYPE_Industry: type 8,Type of organization where client works
+ORGANIZATION_TYPE_Industry: type 9,Type of organization where client works
+ORGANIZATION_TYPE_Insurance,Type of organization where client works
+ORGANIZATION_TYPE_Kindergarten,Type of organization where client works
+ORGANIZATION_TYPE_Legal Services,Type of organization where client works
+ORGANIZATION_TYPE_Medicine,Type of organization where client works
+ORGANIZATION_TYPE_Military,Type of organization where client works
+ORGANIZATION_TYPE_Mobile,Type of organization where client works
+ORGANIZATION_TYPE_Other,Type of organization where client works
+ORGANIZATION_TYPE_Police,Type of organization where client works
+ORGANIZATION_TYPE_Postal,Type of organization where client works
+ORGANIZATION_TYPE_Realtor,Type of organization where client works
+ORGANIZATION_TYPE_Religion,Type of organization where client works
+ORGANIZATION_TYPE_Restaurant,Type of organization where client works
+ORGANIZATION_TYPE_School,Type of organization where client works
+ORGANIZATION_TYPE_Security,Type of organization where client works
+ORGANIZATION_TYPE_Security Ministries,Type of organization where client works
+ORGANIZATION_TYPE_Self-employed,Type of organization where client works
+ORGANIZATION_TYPE_Services,Type of organization where client works
+ORGANIZATION_TYPE_Telecom,Type of organization where client works
+ORGANIZATION_TYPE_Trade: type 1,Type of organization where client works
+ORGANIZATION_TYPE_Trade: type 2,Type of organization where client works
+ORGANIZATION_TYPE_Trade: type 3,Type of organization where client works
+ORGANIZATION_TYPE_Trade: type 4,Type of organization where client works
+ORGANIZATION_TYPE_Trade: type 5,Type of organization where client works
+ORGANIZATION_TYPE_Trade: type 6,Type of organization where client works
+ORGANIZATION_TYPE_Trade: type 7,Type of organization where client works
+ORGANIZATION_TYPE_Transport: type 1,Type of organization where client works
+ORGANIZATION_TYPE_Transport: type 2,Type of organization where client works
+ORGANIZATION_TYPE_Transport: type 3,Type of organization where client works
+ORGANIZATION_TYPE_Transport: type 4,Type of organization where client works
+ORGANIZATION_TYPE_University,Type of organization where client works
+ORGANIZATION_TYPE_XNA,Type of organization where client works
+FONDKAPREMONT_MODE_not specified,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+FONDKAPREMONT_MODE_org spec account,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+FONDKAPREMONT_MODE_reg oper account,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+FONDKAPREMONT_MODE_reg oper spec account,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+HOUSETYPE_MODE_block of flats,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+HOUSETYPE_MODE_specific housing,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+HOUSETYPE_MODE_terraced house,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+WALLSMATERIAL_MODE_Block,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+WALLSMATERIAL_MODE_Mixed,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+WALLSMATERIAL_MODE_Monolithic,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+WALLSMATERIAL_MODE_Others,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+WALLSMATERIAL_MODE_Panel,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+"WALLSMATERIAL_MODE_Stone, brick","Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+WALLSMATERIAL_MODE_Wooden,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+EMERGENCYSTATE_MODE_No,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+EMERGENCYSTATE_MODE_Yes,"Normalized information about building where the client lives, What is average (_AVG suffix), modus (_MODE suffix), median (_MEDI suffix) apartment size, common area, living area, age of building, number of elevators, number of entrances, state of the building, number of floor"
+active_credit,Amount of active credit the client has
+active_debt,Amount of active debt the client has
+active_products,Number of active products the client has
+credit_card,Number of active credit cards the client has
+mortgage,Number of mortgages the client has
+days_overdue,The number of days overdue the client was in total.
+credit_sum_overdue,The sum of all credits that were overdue for the client
+status,"Status of Credit Bureau loan during the month (active, closed, DPD0-30,… [C means closed, X means status unknown, 0 means no DPD, 1 means maximal did during month between 1-30, 2 means DPD 31-60,… 5 means DPD 120+ or sold or written off ] )"
+paid_in_full,"Whether all payments where made in full, leftover value"
+pmt_tardiness,Total value how early or late the client made payments
+amt_balance,"Balance during the month of previous credit, summed over the history"
+amt_balance_0_1_year,"Balance during the month of previous credit, summed over the last 1 year"
+amt_balance_1_2_year,"Balance during the month of previous credit, summed over the period between 1-2 years ago"
+amt_recivable,Amount receivable on the previous credit
+dpd,Days past due
+credit_limit,The last reported credit limit for the client
